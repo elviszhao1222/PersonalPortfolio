@@ -35,46 +35,7 @@ A modern, responsive portfolio website showcasing Python, C++, and AI projects.
 - Emotion Detection
 - Yelp Review Sentiment Classification
 
-## Getting Started
-
-1. **Open the Portfolio**
-   - Simply open `index.html` in your web browser
-   - No build process or dependencies required!
-
-2. **Set Up GitHub Integration**
-   - Open `index.html` and find the `GITHUB_CONFIG` section near the bottom
-   - Replace `'YOUR_GITHUB_USERNAME'` with your actual GitHub username
-   - Update the repository names in the `repos` object to match your GitHub repository names
-   - Add `data-github-repo="repository-key"` attribute to project cards where you want GitHub links
-   - The repository key should match a key in the `GITHUB_CONFIG.repos` object
-   
-   Example:
-   ```javascript
-   const GITHUB_CONFIG = {
-       username: 'elviszhao', // Your GitHub username
-       repos: {
-           'missileGuidance': 'missile-guidance-repo', // Project folder name: GitHub repo name
-           'PythonProject1': 'graph-algorithms-repo',
-           // ... add more as needed
-       }
-   };
-   ```
-   
-   Then add to project cards:
-   ```html
-   <div class="project-card" data-category="python" data-github-repo="missileGuidance">
-   ```
-
-3. **Customization**
-   - Edit `index.html` to modify project descriptions
-   - Update `styles.css` to change colors, fonts, or layout
-   - Modify `script.js` to add new interactions
-
-4. **Add More Projects**
-   - Copy a project card structure in `index.html`
-   - Update the project details, tags, and files list
-   - Add `data-github-repo` attribute if you want clickable GitHub links
-   - The card will automatically inherit all styling and animations
+<!-- Getting Started section removed for public README cleanliness -->
 
 ## File Structure
 
