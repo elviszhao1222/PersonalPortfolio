@@ -258,3 +258,27 @@ setTimeout(() => {
     convertFilesToGitHubLinks();
 }, 100);
 
+// VEX Gallery animations
+const galleryObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }, index * 150);
+            galleryObserver.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.2,
+    rootMargin: '0px 0px -50px 0px'
+});
+
+// Observe VEX gallery items
+document.querySelectorAll('.vex-gallery-item').forEach(item => {
+    item.style.opacity = '0';
+    item.style.transform = 'translateY(30px)';
+    item.style.transition = 'all 0.6s ease';
+    galleryObserver.observe(item);
+});
+
