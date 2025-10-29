@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Programming Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Elvis Zhao</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#python" class="nav-link">Python</a></li>
+                <li><a href="#cpp" class="nav-link">C++</a></li>
+                <li><a href="#ai" class="nav-link">AI Projects</a></li>
+                <li><a href="#vex" class="nav-link">VEX Competition</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Elvis Zhao — Programming Portfolio</h1>
+            <p class="hero-subtitle">A collection of projects spanning Python, C++, and AI development</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Python Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">C++ Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">AI Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">VEX Projects</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <section id="vex" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">VEX Competition Projects</h2>
+            <p class="section-description">C++ robot code for VEX V5, including configuration and competition logic</p>
+            <div class="projects-grid">
+                <!-- programtest -->
+                <div class="project-card" data-category="vex" data-github-repo="programtest">
+                    <div class="project-header">
+                        <h3>programtest</h3>
+                        <span class="project-tag">VEX V5</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Baseline VEX V5 project with robot configuration and main control loop.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">VEXcode</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>src/main.cpp</li>
+                                <li>src/robot-config.cpp</li>
+                                <li>include/robot-config.h</li>
+                                <li>include/vex.h</li>
+                                <li>programtest.v5code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- test2 -->
+                <div class="project-card" data-category="vex">
+                    <div class="project-header">
+                        <h3>test2</h3>
+                        <span class="project-tag">VEX V5</span>
+                    </div>
+                    <div class="project-content">
+                        <p>VEX robot program with standard device setup and iterative control.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">VEXcode</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>src/main.cpp</li>
+                                <li>src/robot-config.cpp</li>
+                                <li>include/robot-config.h</li>
+                                <li>include/vex.h</li>
+                                <li>test2.v5code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- turtle -->
+                <div class="project-card" data-category="vex">
+                    <div class="project-header">
+                        <h3>turtle</h3>
+                        <span class="project-tag">VEX V5</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Compact VEX project with device configuration and simple behaviors.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">VEXcode</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>src/main.cpp</li>
+                                <li>src/robot-config.cpp</li>
+                                <li>include/robot-config.h</li>
+                                <li>include/vex.h</li>
+                                <li>turtle.v5code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- turtle2.0 -->
+                <div class="project-card" data-category="vex">
+                    <div class="project-header">
+                        <h3>turtle2.0</h3>
+                        <span class="project-tag">VEX V5</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Updated VEX project variant with compiled outputs and standardized layout.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">VEXcode</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>src/main.cpp</li>
+                                <li>src/robot-config.cpp</li>
+                                <li>include/robot-config.h</li>
+                                <li>include/vex.h</li>
+                                <li>turtle2.0.v5code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VEXEZ -->
+                <div class="project-card" data-category="vex">
+                    <div class="project-header">
+                        <h3>VEXEZ</h3>
+                        <span class="project-tag">VEX V5</span>
+                    </div>
+                    <div class="project-content">
+                        <p>VEX project setup with device configuration and control loop entry point.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">VEXcode</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>src/main.cpp</li>
+                                <li>src/robot-config.cpp</li>
+                                <li>include/robot-config.h</li>
+                                <li>include/vex.h</li>
+                                <li>VEXEZ.v5code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="python" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Python Projects</h2>
+            <p class="section-description">Applications, algorithms, and simulations developed in Python</p>
+            <div class="projects-grid">
+                <!-- Missile Guidance -->
+                <div class="project-card" data-category="python" data-github-repo="missileGuidance">
+                    <div class="project-header">
+                        <h3>Missile Guidance System</h3>
+                        <span class="project-tag">Advanced</span>
+                    </div>
+                    <div class="project-content">
+                        <p>3D tracking system with Extended Kalman Filter (EKF), Kalman Filter (KF), PID controller, and proportional navigation algorithms.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Kalman Filter</span>
+                            <span class="tech-tag">EKF</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>3DTracking.py</li>
+                                <li>EKF.py</li>
+                                <li>KF.py</li>
+                                <li>PID.py</li>
+                                <li>ProportionNavigation.py</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graph Algorithms -->
+                <div class="project-card" data-category="python" data-github-repo="PythonProject1">
+                    <div class="project-header">
+                        <h3>Graph Algorithms</h3>
+                        <span class="project-tag">Algorithms</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Implementation of breadth-first search (BFS) and depth-first search (DFS) algorithms, including optimized versions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">BFS</span>
+                            <span class="tech-tag">DFS</span>
+                            <span class="tech-tag">Graph Theory</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>BFS.py</li>
+                                <li>DFS.py</li>
+                                <li>DFS_optimized.py</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Physics Resistance Test -->
+                <div class="project-card" data-category="python">
+                    <div class="project-header">
+                        <h3>Physics Resistance Test</h3>
+                        <span class="project-tag">Physics</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Physics simulation and testing programs for resistance calculations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Physics</span>
+                            <span class="tech-tag">Simulation</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>Test.py</li>
+                                <li>test2.py</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Euler's Method -->
+                <div class="project-card" data-category="python">
+                    <div class="project-header">
+                        <h3>Euler's Method</h3>
+                        <span class="project-tag">Numerical Methods</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Numerical method implementation for solving differential equations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Numerical Methods</span>
+                            <span class="tech-tag">Mathematics</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>test.py</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pygame Test -->
+                <div class="project-card" data-category="python">
+                    <div class="project-header">
+                        <h3>Pygame Test</h3>
+                        <span class="project-tag">Game Development</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Game development experiments using Pygame library.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Pygame</span>
+                            <span class="tech-tag">Game Dev</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>Test.py</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PID Controller -->
+                <div class="project-card" data-category="python">
+                    <div class="project-header">
+                        <h3>PID Controller</h3>
+                        <span class="project-tag">Control Systems</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Proportional-Integral-Derivative controller implementation for control systems.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Control Systems</span>
+                            <span class="tech-tag">PID</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>PID.py</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cpp" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">C++ Projects</h2>
+            <p class="section-description">System-level programming, algorithms, and data structures in C++</p>
+            <div class="projects-grid">
+                <!-- AccToDisplace -->
+                <div class="project-card" data-category="cpp" data-github-repo="AccToDisplace">
+                    <div class="project-header">
+                        <h3>Acceleration to Displacement</h3>
+                        <span class="project-tag">Signal Processing</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Convert acceleration data to displacement using Kalman filtering techniques.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Kalman Filter</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Signal Processing</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>AccPos.cpp/h</li>
+                                <li>KalmanFilter.cpp/h</li>
+                                <li>main.cpp</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AutoCar -->
+                <div class="project-card" data-category="cpp" data-github-repo="AutoCar">
+                    <div class="project-header">
+                        <h3>Autonomous Car</h3>
+                        <span class="project-tag">Robotics</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Path planning and decision-making system for autonomous vehicles with sensory input processing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Path Planning</span>
+                            <span class="tech-tag">Robotics</span>
+                            <span class="tech-tag">Decision Making</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>PathPlanning.h</li>
+                                <li>Sensory.cpp/h</li>
+                                <li>决策规划.cpp</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VEX Robotics -->
+                <div class="project-card" data-category="cpp">
+                    <div class="project-header">
+                        <h3>VEX Robotics EKF</h3>
+                        <span class="project-tag">Robotics</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Extended Kalman Filter implementation for VEX robotics systems.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">EKF</span>
+                            <span class="tech-tag">VEX</span>
+                            <span class="tech-tag">Robotics</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>EKF.cpp/h</li>
+                                <li>linearF.cpp/h</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Structures -->
+                <div class="project-card" data-category="cpp">
+                    <div class="project-header">
+                        <h3>Data Structures & Algorithms</h3>
+                        <span class="project-tag">Algorithms</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Implementations of fundamental data structures: Segment Tree, Sparse Table (ST), RMQ, and Chain Forward Star.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Segment Tree</span>
+                            <span class="tech-tag">Sparse Table</span>
+                            <span class="tech-tag">RMQ</span>
+                            <span class="tech-tag">Graph</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>线段树模板 (Segment Tree)</li>
+                                <li>ST表模板 (Sparse Table)</li>
+                                <li>ST&RMQ</li>
+                                <li>链式前向星 (Chain Forward Star)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dynamic Programming -->
+                <div class="project-card" data-category="cpp">
+                    <div class="project-header">
+                        <h3>Dynamic Programming</h3>
+                        <span class="project-tag">Algorithms</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Dynamic programming solutions including maximum subtree sum and tree DP problems.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">DP</span>
+                            <span class="tech-tag">Tree DP</span>
+                            <span class="tech-tag">Algorithms</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>P1122最大子树和</li>
+                                <li>P1352没有上司的舞会</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Project -->
+                <div class="project-card" data-category="cpp">
+                    <div class="project-header">
+                        <h3>Time Maze Game</h3>
+                        <span class="project-tag">Game Development</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Text-based adventure game with multiple chapters and endings.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Game Dev</span>
+                            <span class="tech-tag">Text Adventure</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>TimeMaze.py</li>
+                                <li>Multiple chapter files</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Stanford Summer School AI Projects</h2>
+            <p class="section-description">Machine learning and AI projects from Stanford Summer School</p>
+            <div class="projects-grid">
+                <!-- Linear Regression -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-header">
+                        <h3>Linear Regression</h3>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Linear regression implementation from scratch with gradient descent optimization.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Regression</span>
+                            <span class="tech-tag">Gradient Descent</span>
+                            <span class="tech-tag">NumPy</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>samar_linear_regression_student_ipynb.py</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logistic Regression -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-header">
+                        <h3>Logistic Regression</h3>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Binary classification using logistic regression with sigmoid activation function.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Classification</span>
+                            <span class="tech-tag">Logistic Regression</span>
+                            <span class="tech-tag">Neural Networks</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>student_beginner_logisticregression_ipynb.py</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Neural Networks -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-header">
+                        <h3>Neural Networks</h3>
+                        <span class="project-tag">Deep Learning</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Implementation of feedforward neural networks with backpropagation from scratch.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Neural Networks</span>
+                            <span class="tech-tag">Backpropagation</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>student_beginner_neuralnetworks_ipynb.py</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emotion Detection -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-header">
+                        <h3>Emotion Detection</h3>
+                        <span class="project-tag">NLP</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Multi-class emotion detection system using natural language processing and machine learning techniques.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Emotion Detection</span>
+                            <span class="tech-tag">Classification</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>student_emotiondetection_section1_ipynb.py</li>
+                                <li>student_emotiondetection_section2_ipynb.py</li>
+                                <li>student_emotiondetection_section3_ipynb.py</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sentiment Analysis -->
+                <div class="project-card" data-category="ai" data-github-repo="Stanford-AI">
+                    <div class="project-header">
+                        <h3>Yelp Review Sentiment Classification</h3>
+                        <span class="project-tag">NLP</span>
+                    </div>
+                    <div class="project-content">
+                        <p>Sentiment analysis system for classifying Yelp restaurant reviews as positive or negative.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Sentiment Analysis</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Text Classification</span>
+                        </div>
+                        <div class="project-files">
+                            <strong>Files:</strong>
+                            <ul>
+                                <li>student_yelp_review_sentiment_classification_ipynb.py</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-description">Feel free to reach out for collaboration, questions, or opportunities.</p>
+            <div class="projects-grid">
+                <div class="project-card" style="text-align:center;">
+                    <div class="project-header" style="justify-content:center;">
+                        <h3>Elvis Zhao</h3>
+                    </div>
+                    <div class="project-content">
+                        <p>Email: <a href="mailto:elvis.zhao.2027@hibaacademy.org">elvis.zhao.2027@hibaacademy.org</a></p>
+                        <p>
+                            <a href="mailto:elvis.zhao.2027@hibaacademy.org" class="tech-tag" style="display:inline-block; margin-top:0.75rem;">Send Email</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Elvis Zhao. Showcasing projects in Python, C++, AI, and VEX.</p>
+            <p>Contact: <a href="mailto:elvis.zhao.2027@hibaacademy.org">elvis.zhao.2027@hibaacademy.org</a></p>
+        </div>
+    </footer>
+
+    <!-- GitHub Configuration -->
+    <script>
+        // Configure your GitHub username and repository structure
+        // Format: 'project-name': 'github-username/repo-name'
+        const GITHUB_CONFIG = {
+            username: 'YOUR_GITHUB_USERNAME', // Replace with your GitHub username
+            repos: {
+                // Python projects
+                'missileGuidance': 'missile-guidance', // Example: github.com/YOUR_USERNAME/missile-guidance
+                'PythonProject1': 'graph-algorithms',
+                'PhysicsResistanceTest': 'physics-resistance',
+                'Eulersmethod': 'eulers-method',
+                'pygameTest': 'pygame-test',
+                
+                // C++ projects  
+                'AccToDisplace': 'acc-to-displace',
+                'AutoCar': 'autonomous-car',
+                'VEX_98060C_v4.0': 'vex-ekf',
+                'GameProject_1': 'time-maze-game',
+                
+                // AI projects (Stanford)
+                'Stanford-AI': 'stanford-ai-projects',
+                
+                // VEX projects
+                'programtest': 'vex-programtest',
+                'turtle': 'vex-turtle',
+                'turtle2.0': 'vex-turtle-2',
+                'VEXEZ': 'vex-ez'
+            }
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+
