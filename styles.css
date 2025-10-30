@@ -576,3 +576,49 @@ body {
     transform: translateY(0);
 }
 
+/* Photo Cloud (separate section) */
+.photo-cloud {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 10px;
+    grid-auto-flow: dense;
+    gap: 8px;
+    margin-top: 1.5rem;
+}
+
+.cloud-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, z-index 0.35s ease;
+}
+
+.cloud-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cloud-item:hover {
+    transform: scale(1.06);
+    box-shadow: var(--shadow-xl);
+    z-index: 2;
+}
+
+/* Reuse span classes */
+.span-3x3 { grid-column: span 3; grid-row: span 30; }
+.span-4x3 { grid-column: span 4; grid-row: span 30; }
+.span-2x2 { grid-column: span 2; grid-row: span 20; }
+.span-5x4 { grid-column: span 5; grid-row: span 40; }
+.span-6x4 { grid-column: span 6; grid-row: span 40; }
+
+@media (max-width: 768px) {
+    .photo-cloud {
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 8px;
+        gap: 6px;
+    }
+}
+
