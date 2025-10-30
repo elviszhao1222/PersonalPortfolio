@@ -128,7 +128,7 @@ body {
 .photo-item:hover { }
 
 /* Different spans to create a spliced mosaic */
-.span-3x3, .span-4x3, .span-2x2, .span-5x4, .span-6x4 { display: none; }
+/* removed previous hide rule for span classes to allow gallery display */
 
 .hero-title {
 }
